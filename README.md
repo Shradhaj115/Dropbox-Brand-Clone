@@ -1,67 +1,52 @@
-# Dropbox-Brand-Clone---Kraftbase
-Dropbox Brand Clone - Kraftbase
+# Dropbox Brand Clone - https://brand.dropbox.com/
 
-1. Next.js + TypeScript
- Next.js was chosen as the framework to leverage its built-in routing, optimized image handling, and server-side rendering features.
+A modern, animated clone of the Dropbox brand website built with Next.js, featuring smooth transitions and responsive design.
 
- TypeScript adds type safety and improves developer experience by reducing potential runtime errors.
+## Features
 
-2. Tailwind CSS
-Adopted Tailwind CSS for fast, utility-first styling directly in JSX, allowing rapid prototyping and consistent design patterns.
+- Smooth page transitions and animations using Framer Motion
+- Responsive navigation with animated logo and menu
+- Modern UI design with Tailwind CSS
+- Client-side animations with React hooks
+- Vector graphics with animated SVG paths
 
-It provides flexibility when working with responsive layouts and custom grid areas.
+## Tech Stack
 
-3. Framer Motion
-Used Framer Motion for smooth and declarative animations:
+- [Next.js]- React framework for production
+- [Framer Motion]- Animation library
+- [Tailwind CSS]- Utility-first CSS framework
+- [TypeScript]- Type-safe JavaScript
 
-Navbar fades and slides in on load.
+## Getting Started
 
-AssetGrid items animate in staggered sequence when they enter the viewport.
+### Prerequisites
 
-Hover states for grid items include scale, rotate, and color transition effects.
+- Node.js (v14 or higher)
+- npm or yarn package manager
 
-Scroll-to-top button fades in/out based on scroll position and has hover animations.
+### Installation
 
-4. Lenis Smooth Scrolling
-Integrated Lenis for smooth and inertia-based scrolling.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/dropbox-brand-clone.git
+cd dropbox-brand-clone
+```
 
-Enhances the user experience by making scroll interactions feel more fluid across the entire layout.
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-5. Modular Component Structure
-Navbar.tsx: A fixed, animated navigation bar for branding and quick links.
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-AssetGrid.tsx: A dynamic grid of brand sections with interactive icons and custom grid area layout using CSS Grid.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-SmoothScrollProvider.tsx: Global provider for applying Lenis to all pages.
 
-page.tsx: Combines all components and defines full-screen section anchors for each brand guideline (e.g., Logo, Typography, Motion).
-
-6. Interactive Asset Grid
-The grid items are configured using an assets array to map icons, colors, and target sections.
-
-Each grid item:
-
-Animates into view using useInView and useAnimation from Framer Motion.
-
-Supports hover state icon swaps and background transitions.
-
-Smooth scrolls to corresponding sections using native scrollIntoView.
-
-7. Scroll-to-Top Button
-A floating button appears after scrolling 300px down the page.
-
-Animated with Framer Motion for smooth entry/exit and hover scale.
-
-Uses native window.scrollTo with smooth behavior for quick UX improvement.
-
-8. Accessibility & UX
-All buttons and interactive elements have sufficient contrast.
-
-Smooth scroll actions provide a better visual transition between sections.
-
-Icons are paired with semantic section titles for clarity.
-
-9. Custom Grid Layout
-The grid areas in AssetGrid use grid-template-areas to create a visually interesting and asymmetric layout inspired by modern design systems.
-
-Optimized for both desktop and responsive views with Tailwind utilities.
+```
